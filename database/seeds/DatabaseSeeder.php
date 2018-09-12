@@ -12,9 +12,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {  
-        //  Model::unguard();
+        // Model::unguard();
         // $this->call(UsersTableSeeder::class);
         // Model::reguard();
-        $this->call(CateTableSeeder::class);
+        // $this->call(CateTableSeeder::class);
+        factory(App\Models\CommentModel::class,4)->create();
     }
 }

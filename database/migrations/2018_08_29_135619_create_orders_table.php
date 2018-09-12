@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOdersTable extends Migration
+class CreateOrdersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CreateOdersTable extends Migration
      */
     public function up()
     {
-        Schema::create('oders', function (Blueprint $table) {
-            $table->increments('oder_id')->unsigned();
-            $table->string('oder_name');
-            $table->string('oder_phone');
-            $table->string('oder_email');
-            $table->string('oder_address');
-            $table->string('oder_status');
-            $table->text('oder_note')->nullable();
+        Schema::create('orders', function (Blueprint $table) {
+            $table->increments('order_id')->unsigned();
+            $table->string('order_name');
+            $table->string('order_phone');
+            $table->string('order_email');
+            $table->string('order_address');
+            $table->string('order_status');
+            $table->text('order_note')->nullable();
             $table->timestamps();
         });
     }

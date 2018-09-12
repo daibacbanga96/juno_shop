@@ -23,6 +23,7 @@ class CreateProductTable extends Migration
             $table->integer('prod_thumbnail')->nullable();
             $table->string('prod_status');
             $table->integer('prod_cate');
+            $table->string('prod_type');
             $table->integer('prod_parent')->nullable();
             $table->integer('prod_value_id')->nullable();
             $table->timestamps();

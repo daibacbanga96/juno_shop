@@ -32,15 +32,18 @@
                   <th>Hành động</th>
                 </tr>
                 </thead>
+                <?php $stt=1 ?>
+                @foreach($comment as $comments)
                 <tr>
-                  <td>1</td>
-                  <td style="width: 15%">Ngô Duy Đức Anh</td>
+                  <td>{{$stt++}}</td>
+                  <td style="width: 15%">{{$comments->comment_name}}</td>
                   <td style="width: 20%">Giày cao gót...</td>
-                  <td style="width: 50%">Sản phẩm rất tốt</td>
+                  <td style="width: 50%">{{$comments->comment_content}}</td>
                   <td>
                     <a class="btn btn-danger" data-toggle="modal" data-target="#modal-default"><i class="fa fa-trash"></i> Xoá</a>
                   </td>
                 </tr>
+                @endforeach()
               </table>
             </div>
           <!-- /.box-body -->

@@ -38,7 +38,7 @@ Route::get('detail','AdminController@getDetailPro');
 Route::get('addcolor','AdminController@getAddColor');
 Route::get('order','AdminController@getOrder');
 Route::get('detailorder','AdminController@getDetailOrder');
-Route::get('comment','AdminController@getComment');
+Route::get('comment','CommentController@getComment');
 
 
 });
